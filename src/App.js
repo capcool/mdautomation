@@ -1,5 +1,6 @@
 import './App.css';
 import TopAppBar from './Components/topAppBar';
+import BottomAppBar from './Components/bottomAppBar';
 import FirstComponent from './Components/FirstComponent';
 import CardComponent from './Components/CardComponent';
 import ClientComponent from './Components/ClientComponent';
@@ -12,6 +13,7 @@ function App() {
       <FirstComponent/>
       <CardComponent/>
       <ClientComponent/>
+      <BottomAppBar/>
       </div>
   );
 }

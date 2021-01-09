@@ -4,7 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '150px', 
-    height:'100px'
+    height:'100px',
+    transition: 'transform .2s',
+    '&:hover':{
+    '-ms-transform': 'scale(1.5)',
+  '-webkit-transform': 'scale(1.5)',
+    transform: 'scale(1.5)'
+    }
        
   },
   media: {

@@ -10,12 +10,11 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { blue } from '@material-ui/core/colors';
+import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import InfoIcon from '@material-ui/icons/Info';
+import RoomServiceOutlinedIcon from '@material-ui/icons/RoomServiceOutlined';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: blue[500],
+    backgroundColor: red[500],
   },
 }));
 
@@ -54,16 +53,16 @@ export default function CardService() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            <InfoIcon/>
+            <RoomServiceOutlinedIcon/>
           </Avatar>
         }
-        title="About Us"
+        title="Service"
         subheader=""
       />
       <CardMedia
         className={classes.media}
         image={process.env.PUBLIC_URL+'/pic/MD-Pic2.jpg'}
-        title="About us"
+        title="Services"
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">

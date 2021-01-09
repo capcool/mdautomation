@@ -10,12 +10,11 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { blue } from '@material-ui/core/colors';
+import { green } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import InfoIcon from '@material-ui/icons/Info';
+import PermDataSettingIcon from '@material-ui/icons/PermDataSetting';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: blue[500],
+    backgroundColor: green[500],
   },
 }));
 
@@ -53,7 +52,7 @@ export default function CardAreaofExpertise() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            <InfoIcon/>
+            <PermDataSettingIcon/>
           </Avatar>
         }
         title="Areas of Expertise"
@@ -61,9 +60,10 @@ export default function CardAreaofExpertise() {
       />
       <CardMedia
         className={classes.media}
-        image={process.env.PUBLIC_URL+'/pic/MD-Pic2.jpg'}
+        image={process.env.PUBLIC_URL+'/pic/MD-Pic3.jpeg'}
         title="About us"
       />
+
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           Rockwell Automation ..........................................                     

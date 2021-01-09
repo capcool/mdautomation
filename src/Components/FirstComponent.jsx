@@ -30,10 +30,16 @@ const useStyles = makeStyles((theme) => ({
   },
   title:{
     fontSize:'30px',
+    [theme.breakpoints.down('sm')]:{
+      fontSize:'15px',
+    },
   },
   titleRed:{
     fontSize:'30px',
-    color:'Red'
+    color:'Red',
+    [theme.breakpoints.down('sm')]:{
+      fontSize:'15px',
+    },
   }
 }));
 

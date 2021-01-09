@@ -11,8 +11,6 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { blue } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import InfoIcon from '@material-ui/icons/Info';
 
@@ -61,20 +59,18 @@ export default function CardAboutUs() {
       />
       <CardMedia
         className={classes.media}
-        image={process.env.PUBLIC_URL+'/pic/MD-Pic2.jpg'}
+        image={process.env.PUBLIC_URL+'/pic/MD-Pic1.jpg'}
         title="About us"
       />
       <CardContent>
+      <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
+        MD Automation is an engineering company in the field of Industrial Automation. MD Automation (Previously known as Elegant Automation) is best known in the business field of Electrical,
+        Instrumentation & Automation Engineering since 2015.
         </Typography>
       </CardContent>
+      </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
         <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
@@ -87,34 +83,34 @@ export default function CardAboutUs() {
         </IconButton>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+      <CardContent>
         
-          <Typography paragraph>
-            MD Automation is an engineering company in the field of Industrial
-            Automation. MD Automation (Previously known as Elegant
-            Automation) is best known in the business field of Electrical,
-            Instrumentation & Automation Engineering since 2015. The company is
-            driven by a balanced team of senior as well as young yet experienced
-            engineering professionals with experiences & exposures in national
-            industries
-          </Typography>
-          <Typography paragraph>
-            Our services include control software design and
-            development, PLC programming and system integration. We
-            also support Calibration & Servicing of different types of
-            Instruments like Pressure Measuring Instrument (PT,DPT,PG,
-            PS) Temperature Measuring Instrument like (RTD,
-            Thermocouple, TG, TS) Calibration of control Valve, Various
-            Damper, Pneumatic Valves etc.
+        <Typography paragraph>
+          MD Automation is an engineering company in the field of Industrial
+          Automation. MD Automation (Previously known as Elegant
+          Automation) is best known in the business field of Electrical,
+          Instrumentation & Automation Engineering since 2015. The company is
+          driven by a balanced team of senior as well as young yet experienced
+          engineering professionals with experiences & exposures in national
+          industries
+        </Typography>
+        <Typography paragraph>
+          Our services include control software design and
+          development, PLC programming and system integration. We
+          also support Calibration & Servicing of different types of
+          Instruments like Pressure Measuring Instrument (PT,DPT,PG,
+          PS) Temperature Measuring Instrument like (RTD,
+          Thermocouple, TG, TS) Calibration of control Valve, Various
+          Damper, Pneumatic Valves etc.
 
-          </Typography>
-          <Typography paragraph>
-            We have a group of technical experts who have experience in
-            undertaking complete automation job on turnkey basis, viz.,
-            Drawing, Design, software writing Erection and
-            Commissioning, Training of manpower at site.
-          </Typography>
-        </CardContent>
+        </Typography>
+        <Typography paragraph>
+          We have a group of technical experts who have experience in
+          undertaking complete automation job on turnkey basis, viz.,
+          Drawing, Design, software writing Erection and
+          Commissioning, Training of manpower at site.
+        </Typography>
+      </CardContent>
       </Collapse>
     </Card>
   );

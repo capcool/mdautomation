@@ -21,9 +21,6 @@ export default function CardComponent() {
        <CardAboutUs/>
       <CardAreaofExpertise/>
       <CardService/>
-      <CardAboutUs/>
-      <CardAreaofExpertise/>
-      <CardService/>
     </div>
   );
 }
